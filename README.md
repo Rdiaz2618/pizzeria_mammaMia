@@ -44,9 +44,9 @@ npm run build
 
 ```
 src/
-├── assets/          # Imágenes del proyecto
-├── componentes/      # Componentes de React (Navbar, Header, Home, CardPizza, Footer)
-├── utils/            # Funciones auxiliares (ej: formateo de precios)
+├── assets/          
+├── componentes/      
+├── utils/            
 ├── App.jsx
 └── main.jsx
 ```
