@@ -1,16 +1,56 @@
-# React + Vite
+# Pizzería Mamma Mia! 🍕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto del Hito 1 de la Academia Desafío Latam — Introducción a React.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Aplicación web desarrollada con **React** y **Vite.js** que simula la página principal de una pizzería. Incluye un menú de navegación, una sección de bienvenida (hero) y un catálogo de pizzas presentado en cards.
 
-## React Compiler
+## Componentes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Navbar**: menú de navegación con opciones de Home, Login/Register o Profile/Logout (según el estado de la variable `token`), y el total de la compra formateado.
+- **Header**: título y descripción de bienvenida sobre una imagen de fondo.
+- **Home**: página principal, contiene el `Header` y el listado de pizzas.
+- **CardPizza**: card reutilizable que recibe por props el nombre, precio, ingredientes e imagen de cada pizza.
+- **Footer**: pie de página con la información de derechos reservados.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite.js
+- Bootstrap (vía CDN)
+
+## Instalación y ejecución
+
+Clona el repositorio e instala las dependencias:
+
+```bash
+npm install
+```
+
+Levanta el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Genera la versión de producción:
+
+```bash
+npm run build
+```
+
+## Estructura del proyecto
+
+```
+src/
+├── assets/          # Imágenes del proyecto
+├── componentes/      # Componentes de React (Navbar, Header, Home, CardPizza, Footer)
+├── utils/            # Funciones auxiliares (ej: formateo de precios)
+├── App.jsx
+└── main.jsx
+```
+
+## Autor
+
+Proyecto individual desarrollado como parte del Bootcamp de Desafío Latam.
